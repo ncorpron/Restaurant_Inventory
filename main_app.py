@@ -1,8 +1,8 @@
 import streamlit as st
 from inventory import inventory_page
-from Charts import charts_page
-from Reports import reports_page
-from Alerts import alerts_page
+from charts import charts_page
+from reports import reports_page
+from alerts import alerts_page
 
 st.set_page_config(page_title="Restaurant Inventory Dashboard", layout="wide")
 
