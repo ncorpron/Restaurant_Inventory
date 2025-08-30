@@ -1,6 +1,7 @@
 import streamlit as st
 import plotly.express as px
 from utils import load_data, recalc
+from banner import show_banner
 
 def charts_page():
     st.title("📊 Charts & Inventory Insights")
