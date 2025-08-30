@@ -8,6 +8,12 @@ from alerts import alerts_page
 st.set_page_config(page_title="Restaurant Inventory Dashboard", layout="wide")
 
 # -----------------------------
+# Initialize session state if it doesn't exist
+# -----------------------------
+if "page" not in st.session_state:
+    st.session_state.page = "Inventory"  # Default page to "Inventory"
+
+# -----------------------------
 # Show banner with page-specific images
 # -----------------------------
 if st.session_state.page == "Inventory":
@@ -20,18 +26,12 @@ else:
     show_banner("https://images.unsplash.com/photo-1579738207245-77ed742e5704?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjQ8NTd8MHx8c2VhcmNofDExfHxmb29kfHx8fHx8fDE2Nzc2Nzg0NzI&ixlib=rb-1.2.1&q=80&w=1080")  # Default Food
 
 # -----------------------------
-# Initialize session state
-# -----------------------------
-if "page" not in st.session_state:
-    st.session_state.page = "Inventory"
-
-# -----------------------------
 # Sidebar: Page Navigation
 # -----------------------------
 pages = ["Inventory", "Charts", "Reports", "Alerts"]
 for p in pages:
     if st.sidebar.button(p, key=f"page_{p}"):
-        st.session_state.page = p
+        st.session_state.page = p  # Update page state on button click
 
 # -----------------------------
 # Sidebar: Thresholds
