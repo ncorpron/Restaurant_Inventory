@@ -17,13 +17,13 @@ if "page" not in st.session_state:
 # Show banner with page-specific images
 # -----------------------------
 if st.session_state.page == "Inventory":
-    show_banner("https://images.unsplash.com/photo-1580902145051-e8d17c3bcda9?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjQ4NTd8MHx8c2VhcmNofDExfHxmb29kfHx8fHx8fDE2Nzc2Nzg0NzI&ixlib=rb-1.2.1&q=80&w=1080")  # Fresh Food
+    show_banner("https://raw.githubusercontent.com/ncorpron/Restaurant_Inventory/main/assets/images/casey-lee-awj7sRviVXo-unsplash.jpg")  # Fresh Food
 elif st.session_state.page == "Charts":
-    show_banner("https://images.unsplash.com/photo-1504697847147-4b8e2fa470b3?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjQ4NTd8MHx8c2VhcmNofDN8fHxlbnRyZWVzfGVufDB8fHx8fDE2NzcyMzA3NzA&ixlib=rb-1.2.1&q=80&w=1080")  # Entrees
+    show_banner("https://raw.githubusercontent.com/ncorpron/Restaurant_Inventory/main/assets/images/victoria-shes-UC0HZdUitWY-unsplash.jpg")  # Entrees
 elif st.session_state.page == "Reports":
-    show_banner("https://images.unsplash.com/photo-1566795911-8b9bdf8e2e74?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjQ4NTd8MHx8c2VhcmNofDN8fHxd2luZXxlbnRyZWV8ZW58fDB8fHx8fDE2NzcyMzA4MzA&ixlib=rb-1.2.1&q=80&w=1080")  # Wine
+    show_banner("https://raw.githubusercontent.com/ncorpron/Restaurant_Inventory/main/assets/images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg")  # Wine
 else:
-    show_banner("https://images.unsplash.com/photo-1579738207245-77ed742e5704?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjQ8NTd8MHx8c2VhcmNofDExfHxmb29kfHx8fHx8fDE2Nzc2Nzg0NzI&ixlib=rb-1.2.1&q=80&w=1080")  # Default Food
+    show_banner("https://raw.githubusercontent.com/ncorpron/Restaurant_Inventory/main/assets/images/lily-banse--YHSwy6uqvk-unsplash.jpg")  # Default Food
 
 # -----------------------------
 # Sidebar: Page Navigation
