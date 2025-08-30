@@ -29,7 +29,8 @@ def show_banner():
         unsafe_allow_html=True
     )
 
-
+# 👇 Added the banner at the very top
+show_banner()
 
 
 
