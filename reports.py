@@ -1,6 +1,7 @@
 import streamlit as st
 from utils import load_data, recalc
 import io
+from banner import show_banner
 
 def reports_page():
     st.title("📄 Reports")
