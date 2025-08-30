@@ -1,5 +1,5 @@
 import streamlit as st
-from Inventory import inventory_page
+from inventory import inventory_page
 from Charts import charts_page
 from Reports import reports_page
 from Alerts import alerts_page
