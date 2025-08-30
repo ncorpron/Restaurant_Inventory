@@ -1,7 +1,9 @@
-
 import pandas as pd
 import numpy as np
+import streamlit as st
 
+# Cache the load_data() function to avoid recalculating every time
+@st.cache_data
 def load_data():
     data = {
         "Item": ["Chicken Breast", "Beef", "Rice", "Milk", "Lettuce", "Eggs", "Cheese", "Tomatoes", "Fish", "Yogurt"],
@@ -23,6 +25,9 @@ def load_data():
     usage_df = pd.DataFrame()  # placeholder if needed
     return df, usage_df, months
 
+
+# Cache the recalc() function as well if it's performing heavy calculations
+@st.cache_data
 def recalc(df, months):
     # Placeholder: you can add any recalculation logic if needed
     return df
