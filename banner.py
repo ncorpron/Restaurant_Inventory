@@ -1,5 +1,3 @@
-import streamlit as st
-
 def show_banner(image_url):
     st.markdown(
         f"""
