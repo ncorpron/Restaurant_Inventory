@@ -1,9 +1,9 @@
 import streamlit as st
 from banner import show_banner  # your banner function
-from Inventory import inventory_page   # import modules at the top
-from Charts import charts_page
-from Reports import reports_page
-from Alerts import alerts_page
+from inventory import inventory_page   # import modules at the top
+from charts import charts_page
+from reports import reports_page
+from alerts import alerts_page
 
 st.set_page_config(page_title="Restaurant Inventory Dashboard", layout="wide")
 
